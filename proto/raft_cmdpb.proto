@@ -5,6 +5,11 @@ import "metapb.proto";
 import "errorpb.proto";
 import "eraftpb.proto";
 
+import "rustproto.proto";
+
+option (rustproto.carllerche_bytes_for_bytes_all) = true;
+option (rustproto.carllerche_bytes_for_string_all) = true;
+
 option java_package = "com.pingcap.tikv.kvproto";
 
 message GetRequest {
